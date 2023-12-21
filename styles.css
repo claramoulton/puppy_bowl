@@ -1,3 +1,41 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  color: darkcyan;
+  background-color: rgb(184, 225, 212);
+  border-radius: 5px;
+}
+
+.all {
+  color: darkgreen;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  border: solid 5px teal;
+  background-color: rgb(242, 178, 58);
+  width: calc(100% / 3 -2rem);
+  border-radius: 5px;
+  list-style-type: none;
+}
+
+.cards {
+  height: 400px;
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 1rem;
+  padding: 1rem;
+  border: solid 2px teal;
+  background-color: mediumaquamarine;
+  border-radius: 5px;
+}
+
+.image {
+  align-items: center;
+  margin: 10px;
+  height: 250px;
+  width: 150px;
+  border: solid 2px black;
 }

@@ -6,6 +6,7 @@ window.addEventListener('hashchange', function(){
     render();
 });
 
+
 function render(){
     span.innerHTML = players.length;
     const hash = window.location.hash;
@@ -18,9 +19,10 @@ function render(){
     }
     const html = filtered.map(function(player){
         return`
-            <li>
-             <h4><a href='#${player.id}'>${player.name}</a></h4>
-             <em>${player.breed}</em>
+            <li class="cards">
+             <h3><a href='#${player.id}'>${player.name}</a></h3>
+             <em>${player.breed}</em> <br>
+             <img class="image" src='${player.imageUrl}' />
             </li>
         `;
     }).join('');
